@@ -1,0 +1,13 @@
+Package: spec
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1
+Date: 2015-04-17
+Author: Dudu
+Maintainer: Dudu <meireles@umn.edu>
+Description: More about what it does (maybe more than one line)
+License: GPL3
+LazyData: TRUE
+Imports: lubridate
+Suggests: knitr
+VignetteBuilder: knitr
