@@ -1,3 +1,7 @@
+#TODO
+#use Rphylopars::phylopars and then get result$anc_recon to reconstruct tips. Replace code below with that
+#also note use of this for regression
+
 #' Predict the spectral signature of a taxon
 #'
 #' @param taxon Taxon to estimate (character format)
@@ -15,6 +19,7 @@ PredictSignature <- function(taxon, phy, spectra.df) {
   phy.pruned <- ape::drop.tip(phy.pruned, taxon)
   spectra.pruned <- pruned$data
   spectra.pruned <- spectra.pruned[-which(rownames(spectra.pruned)==taxon),]
+
   anc.recon <- phylocurve::phylocurve(y~x,tree = phy.pruned,data = SpectraToPhylocurveData(spectra.pruned))
 
   #TODO: Get the estimate and CI at the root, return this
