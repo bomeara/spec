@@ -8,6 +8,9 @@ Maintainer: Dudu <meireles@umn.edu>
 Description: More about what it does (maybe more than one line)
 License: GPL3
 LazyData: TRUE
-Imports: lubridate
-Suggests: knitr
+Imports:
+    lubridate
+Suggests:
+    knitr
 VignetteBuilder: knitr
+RoxygenNote: 5.0.1
